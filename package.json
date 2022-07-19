@@ -1,0 +1,22 @@
+{
+  "name": "folio_web",
+  "version": "1.0.0",
+  "description": "portfolio website built using html, sass and javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compileSass": "sass ./styles/app.scss ./styles/app.css --no-source-map --watch"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "html",
+    "sass",
+    "javascript"
+  ],
+  "author": "Peter Xuanang",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}
