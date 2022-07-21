@@ -1,2 +1,14 @@
 $fontFamily: "Roboto", sans-serif;
 $maxWidth: 120rem;
+$breakpoints: (
+  // 1200 and above
+  "xtra-lg": 1200px,
+  // 993 - 1200
+  "lg": 1200px,
+  // 769 - 992
+  "md": 992px,
+  // 451 - 768
+  "sm": 768px,
+  // 0 - 450,
+  "xsm": 480px
+);
