@@ -1,0 +1,24 @@
+@use "sass:math";
+@use "../abstracts/" as *;
+
+.container {
+  width: 100%;
+  max-width: $maxWidth;
+  margin: 0 auto;
+  margin-top: 10rem;
+  @include containerPadding;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1200px) {
+  @for $i from 0 to 12 {
+    .col-xlg-#{$i} {
+      flex-basis: math.div(100%, 12) * $i;
+      max-width: math.div(100%, 12) * $i;
+    }
+  }
+}
