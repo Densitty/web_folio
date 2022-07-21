@@ -1,0 +1,23 @@
+@mixin flexDisplay($mainDir, $crossDir) {
+  display: flex;
+  justify-content: $mainDir;
+  align-items: $crossDir;
+}
+
+@mixin twoColumns($col1, $col2, $rows) {
+  display: grid;
+  grid-template-columns: $col1 $col2;
+  grid-template-rows: $rows;
+}
+
+@mixin position($name, $top, $right, $bottom, $left) {
+  position: $name;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin containerPadding {
+  padding: 0 1.5rem;
+}
