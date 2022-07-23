@@ -1,4 +1,3 @@
-@use "sass:math";
 @use "../abstracts/" as *;
 
 .container {
@@ -15,7 +14,7 @@
 }
 
 @each $key, $value in $breakpoints {
-  @if ($key == xtra-lg) {
+  @if ($key == "xtra-lg") {
     @media (min-width: $value) {
       @include columns($key);
     }
