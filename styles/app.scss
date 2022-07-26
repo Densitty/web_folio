@@ -4,6 +4,9 @@
 
 // component modules
 @use "./components/nav";
+@use "./components/header";
+@use "./components/buttons";
+@use "./components/modal";
 
 // layout modules
 @use "./layout/grid";

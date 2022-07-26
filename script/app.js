@@ -13,3 +13,18 @@ navToggler.addEventListener("click", (e) => {
     navLinks.classList.toggle("nav__links__show");
   }
 });
+
+// Typewriter effect
+const nameElement = document.querySelector(".header__data__contents__heading");
+const nameText = "peter xuan'ang";
+let start = 0;
+
+function typewriteName() {
+  if (start < nameText.length) {
+    nameElement.textContent += nameText.charAt(start);
+    start++;
+    setTimeout(typewriteName, 1000);
+  }
+}
+
+typewriteName();

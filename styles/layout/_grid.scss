@@ -6,6 +6,10 @@
   margin: 0 auto;
   margin-top: 10rem;
   @include containerPadding;
+
+  @include responsive(sm) {
+    padding: 0 2.5rem;
+  }
 }
 
 .row {
