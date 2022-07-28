@@ -1,0 +1,118 @@
+@use "../abstracts/" as *;
+
+.modal {
+  width: 100%;
+  height: 100%;
+  @include position(fixed, 0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 30;
+  @include flexDisplay(center, center);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s linear;
+  transform: scale(0);
+
+  &.show--modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 75rem;
+    height: 40rem;
+    background: $white;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s linear 0.25s;
+    transform: translateY(-4rem);
+
+    &.show--modal__wrapper {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    @include responsive(sm) {
+      width: 90%;
+      height: auto;
+    }
+
+    &__close {
+      @include position(absolute, 1rem, 2rem, null, null);
+      font-size: 2.5rem;
+      cursor: pointer;
+    }
+
+    &__image {
+      width: 50%;
+      // height: 45rem;
+      @include responsive(sm) {
+        display: none;
+      }
+
+      &__img {
+        width: 100%;
+        height: 100%;
+        // object-fit: cover;
+      }
+    }
+
+    &__contents {
+      width: 50%;
+      padding: 5rem 2rem;
+
+      @include responsive(sm) {
+        width: 100%;
+        // padding: 3rem 1.5rem;
+      }
+
+      &__text {
+        margin-top: 1.5rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $black;
+        line-height: 2.5rem;
+
+        @include responsive(xsm) {
+          font-size: 1.3rem;
+          line-height: 1.8rem;
+        }
+      }
+
+      &__block {
+        @include flexDisplay(space-between, null);
+        padding-bottom: 0.5rem;
+        margin-top: 1.5rem;
+        border-bottom: 0.1rem dashed $gray-200;
+
+        // @include responsive(sm) {
+        //   margin-top: 1.2rem;
+        // }
+
+        &__left {
+          font-size: 1.4rem;
+          font-weight: 400;
+          text-transform: capitalize;
+          color: $black;
+
+          @include responsive(xsm) {
+            font-size: 1.2rem;
+          }
+        }
+
+        &__right {
+          font-size: 1.3rem;
+          font-weight: 400;
+          color: $gray-600;
+
+          @include responsive(xsm) {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}

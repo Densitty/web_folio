@@ -23,8 +23,26 @@ function typewriteName() {
   if (start < nameText.length) {
     nameElement.textContent += nameText.charAt(start);
     start++;
-    setTimeout(typewriteName, 1000);
+    setTimeout(typewriteName, 300);
   }
 }
 
 typewriteName();
+
+// target the modal
+const displayModal = document.querySelector(".modal--btn");
+const modalCloseBtn = document.querySelector(".modal__wrapper__close");
+const modal = document.querySelector(".modal");
+const modalWrapper = document.querySelector(".modal__wrapper");
+
+displayModal.addEventListener("click", () => {
+  modal.classList.add("show--modal");
+
+  modalWrapper.classList.add("show--modal__wrapper");
+});
+
+modalCloseBtn.addEventListener("click", () => {
+  modal.classList.remove("show--modal");
+
+  modalWrapper.classList.remove("show--modal__wrapper");
+});

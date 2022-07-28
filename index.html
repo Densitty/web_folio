@@ -30,6 +30,7 @@
     />
     <link rel="stylesheet" href="./styles/app.css" />
     <title>Folio</title>
+    <script src="https://kit.fontawesome.com/1cbbc2a933.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- navbar -->
@@ -87,7 +88,7 @@
                     class="btn btn--default"
                     >my resume</a
                   >
-                  <button class="btn btn--dark">hire me</button>
+                  <button class="btn btn--dark modal--btn">hire me</button>
                 </div>
                 
               </div>
@@ -99,7 +100,32 @@
     </header>
     <!-- header ends -->
 
-    
+    <!-- modal starts -->
+    <section class="modal">
+      <div class="modal__wrapper">
+        <i class="fa-solid fa-rectangle-xmark modal__wrapper__close"></i>
+        <div class="modal__wrapper__image">
+          <img src="./assets/images/me.svg" alt="" class="modal__wrapper__image__img">
+        </div>
+        <article class="modal__wrapper__contents">
+          <h2 class="heading">why hire me?</h2>
+          <p class="modal__wrapper__contents__text">
+            Hard-working listing programmer with a flair for creating elegant solutions in the least amount of time. As a freelance programmer, I have created many professional websites for clients around the globe.
+            We love what we do and we do what our clients love & work with great clients all over the world to create thoughtful and purposeful websites.
+          </p>
+          <div class="modal__wrapper__contents__block">
+            <span class="modal__wrapper__contents__block__left">email</span>
+            <span class="modal__wrapper__contents__block__right">peter.xuanang@gmail.com</span>
+          </div>
+
+          <div class="modal__wrapper__contents__block">
+            <span class="modal__wrapper__contents__block__left">phone</span>
+            <span class="modal__wrapper__contents__block__right">+234 803 927 2801</span>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- modal ends -->
 
     <script src="./script/app.js"></script>
   </body>
