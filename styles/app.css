@@ -427,6 +427,49 @@ li {
   }
 }
 
+.about {
+  margin-top: 5rem;
+  padding: 8rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/user.jpg") center center/cover no-repeat fixed;
+}
+.about__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__info {
+  max-width: 70%;
+  padding: 3rem 1.5rem;
+  padding-bottom: 15rem;
+  background: linear-gradient(160deg, #ecfdf5 60%, rgba(255, 255, 255, 0.7) 80%, #fff 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+@media (max-width: 768px) {
+  .about__info {
+    max-width: 100%;
+  }
+}
+.about__info__message {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+@media (max-width: 768px) {
+  .about__info__message {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .about__info__message {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+}
+.about__info__message p {
+  margin: 2rem 0;
+}
+
 .container {
   width: 100%;
   max-width: 120rem;
