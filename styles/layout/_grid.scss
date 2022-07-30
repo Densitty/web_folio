@@ -17,6 +17,10 @@
   flex-wrap: wrap;
 }
 
+.row > * {
+  padding: 1.5rem;
+}
+
 @each $key, $value in $breakpoints {
   @if ($key == "xtra-lg") {
     @media (min-width: $value) {
