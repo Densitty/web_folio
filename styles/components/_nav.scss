@@ -31,7 +31,7 @@ $grid-cols: (auto, max-content);
     align-items: center;
     // gap: 1rem;
     @include responsive("sm") {
-      padding: 0 2.5rem;
+      @include padding(0, 2.5rem);
     }
 
     &__links {
@@ -41,10 +41,11 @@ $grid-cols: (auto, max-content);
       column-gap: 2rem;
 
       @include responsive("sm") {
-        @include position(fixed, 8rem, 0, 0, 0);
+        @include position(fixed, 7rem, 0, 0, 0);
         width: 100%;
         height: 100%;
-        background: $gray-200;
+        // background: darken($color: #000000, $amount: 0);
+        background: darken($green-200, 20%);
         grid-template-rows: repeat(5, 3rem);
         grid-template-columns: auto;
         row-gap: 2.5rem;
@@ -68,12 +69,13 @@ $grid-cols: (auto, max-content);
           color: $black;
 
           @include responsive("sm") {
-            padding: 0 2.5rem;
+            @include padding(0, 2.5rem);
             font-size: 1.8rem;
             @include flexDisplay(center, start);
             flex-direction: column;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
+            // padding-top: 1rem;
+            // padding-bottom: 1rem;
+            @include padding(1rem, 2.5rem);
             transition: all 0.5s ease-in;
 
             &:hover {
@@ -141,6 +143,7 @@ $grid-cols: (auto, max-content);
       &__icon {
         color: $black;
         font-size: 2.5rem;
+        font-weight: 600;
 
         span {
           color: $green-600;

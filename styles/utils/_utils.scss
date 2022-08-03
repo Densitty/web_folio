@@ -1,11 +1,7 @@
 @use "../abstracts/" as *;
 
 .heading {
-  font-size: 2rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  color: $black;
-  position: relative;
+  @include sectionHeading(2rem, 500, capitalize, $black, relative);
 
   @include responsive(xsm) {
     font-size: 1.8rem;
@@ -23,4 +19,8 @@
 
 .decrease_margin {
   margin: 2rem 0;
+}
+
+.items--center {
+  @include flexDisplay(null, center);
 }

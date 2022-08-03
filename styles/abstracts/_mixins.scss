@@ -1,5 +1,11 @@
 @use "sass:math";
 @use "./variables" as *;
+@use "./colors";
+
+// global mixins
+@mixin padding($horizontal, $vertical) {
+  padding: $horizontal $vertical;
+}
 
 // flex display
 @mixin flexDisplay($mainDir, $crossDir) {
@@ -27,6 +33,84 @@
 // padding a container on both sides
 @mixin containerPadding {
   padding: 0 1.5rem;
+}
+
+// section heading
+@mixin sectionHeading($fontSize, $fontWeight, $transform, $color, $position) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  text-transform: $transform;
+  color: $color;
+  position: $position;
+}
+
+// modal body
+@mixin modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s linear;
+  transform: scale(0);
+}
+
+// display modal and its content
+@mixin displayModal() {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+@mixin modalWrapper($width, $height) {
+  display: flex;
+  width: $width;
+  height: $height;
+  background: colors.$white;
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s linear 0.25s;
+  transform: translateY(-4rem);
+}
+
+@mixin displayModalWrapper {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@mixin modalWrapperSmallScreen {
+  width: 90%;
+  height: auto;
+}
+
+@mixin modalWrapperContents($width) {
+  width: $width;
+  padding: 5rem 2rem;
+}
+
+@mixin modalCloseBtn {
+  @include position(absolute, 1rem, 2rem, null, null);
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+@mixin modalText {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: colors.$black;
+  line-height: 2.5rem;
 }
 
 // columns for various screen widths
