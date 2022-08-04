@@ -1,0 +1,92 @@
+@use "../abstracts/" as *;
+
+.contact {
+  padding: 8rem 0 2rem;
+  background: linear-gradient(to bottom, $white 30%, $gray-50 70%);
+
+  &__icon {
+    width: 20rem;
+    height: 18rem;
+    display: flex;
+    margin: 0 auto;
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .form {
+    width: 100%;
+    background-color: $white;
+    padding: 4rem;
+
+    &__control {
+      width: 100%;
+      border: none;
+      outline: none;
+      padding: 1.5rem 1rem;
+      border-bottom: 0.1rem solid $gray-200;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $gray-800;
+    }
+
+    textarea {
+      border: 0.1rem solid $gray-200;
+    }
+
+    ::placeholder {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: $gray-500;
+    }
+  }
+
+  &__modal {
+    @include modal;
+  }
+}
+
+.contact__modal {
+  @include modal();
+
+  &.display__response {
+    @include displayModal;
+  }
+
+  &__wrapper {
+    @include modalWrapper(60rem, 20rem);
+
+    &.show__wrapper {
+      @include displayModalWrapper;
+    }
+
+    @include responsive(sm) {
+      @include modalWrapperSmallScreen;
+    }
+
+    &__close {
+      @include modalCloseBtn;
+    }
+
+    &__contents {
+      @include modalWrapperContents(100%);
+
+      &__heading {
+        @include sectionHeading(2rem, 500, capitalize, $black, null);
+      }
+
+      &__text {
+        @include modalText;
+
+        @include responsive(xsm) {
+          font-size: 1.3rem;
+          line-height: 1.8rem;
+          margin-top: 1.1rem;
+        }
+      }
+    }
+  }
+}

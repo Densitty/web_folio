@@ -1,0 +1,87 @@
+@use "../abstracts/" as *;
+
+.container {
+  width: 100%;
+  max-width: $maxWidth;
+  margin: 0 auto;
+  margin-top: 8rem;
+  @include containerPadding;
+
+  @include responsive(sm) {
+    padding: 0 2.5rem;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > * {
+  // padding: 1.5rem 1.5rem 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@each $key, $value in $breakpoints {
+  @if ($key == "xtra-lg") {
+    @media (min-width: $value) {
+      @include columns($key);
+    }
+  } @else {
+    @media (max-width: $value) {
+      @include columns($key);
+    }
+  }
+}
+
+// media query for xtra-large screens
+// @media (min-width: 1200px) {
+//   @for $i from 1 through 12 {
+//     .col-xlg-#{$i} {
+//       flex-basis: math.div(100%, 12) * $i;
+//       max-width: math.div(100%, 12) * $i;
+//     }
+//   }
+// }
+
+// // media query for large screens
+// @media (max-width: 1200px) {
+//   @for $i from 1 through 12 {
+//     .col-lg-#{$i} {
+//       flex-basis: math.div(100%, 12) * $i;
+//       max-width: math.div(100%, 12) * $i;
+//     }
+//   }
+// }
+
+// // media query for medium screens
+// @media (max-width: 992px) {
+//   @for $i from 1 through 12 {
+//     .col-md-#{$i} {
+//       flex-basis: math.div(100%, 12) * $i;
+//       max-width: math.div(100%, 12) * $i;
+//     }
+//   }
+// }
+
+// // media query for small screens
+// @media (max-width: 768px) {
+//   @for $i from 1 through 12 {
+//     .col-sm-#{$i} {
+//       flex-basis: math.div(100%, 12) * $i;
+//       max-width: math.div(100%, 12) * $i;
+//     }
+//   }
+// }
+
+// // media query for xtra-small screens
+// @media (max-width: 480px) {
+//   @for $i from 1 through 12 {
+//     .col-xsm-#{$i} {
+//       flex-basis: math.div(100%, 12) * $i;
+//       max-width: math.div(100%, 12) * $i;
+//     }
+//   }
+// }

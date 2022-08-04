@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compileSass": "sass ./styles/app.scss ./styles/app.css --no-source-map --watch"
+    "compileSass": "sass ./styles/app.scss ./styles/app.css --no-source-map --style compressed --watch"
   },
   "keywords": [
     "portfolio",

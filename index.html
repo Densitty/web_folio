@@ -4,7 +4,719 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Folio</title>
+    <meta name="description" content="Peter Oye is a Physicist switching to web development due to his passion for learning JavaScript, as well as other technologies that power the web.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicons/site.webmanifest" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/app.css" />
+    <title>Folio | PetXG</title>
+    <script src="https://kit.fontawesome.com/1cbbc2a933.js" crossorigin="anonymous"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- navbar -->
+    <nav class="nav">
+      <div class="nav__wrapper">
+        <div class="nav__wrapper__logo">
+          <a href="#" class="nav__wrapper__logo__icon"> Pet<span>XG</span> </a>
+        </div>
+
+        <ul class="nav__wrapper__links">
+          <li class="nav__wrapper__links__link">
+            <a href="#header" class="nav__wrapper__links__link__anchor">Home</a>
+          </li>
+          <li class="nav__wrapper__links__link">
+            <a href="#about" class="nav__wrapper__links__link__anchor">about</a>
+          </li>
+
+          <!-- <li class="nav__wrapper__links__link">
+            <a href="#" class="nav__wrapper__links__link__anchor">experience</a>
+          </li> -->
+
+          <li class="nav__wrapper__links__link">
+            <a href="#projects" class="nav__wrapper__links__link__anchor">projects</a>
+          </li>
+          
+          <li class="nav__wrapper__links__link">
+            <a href="#skills" class="nav__wrapper__links__link__anchor">skills</a>
+          </li>
+
+          <li class="nav__wrapper__links__link">
+            <a href="#contact" class="nav__wrapper__links__link__anchor">contact</a>
+          </li>
+        </ul>
+
+        <div class="nav__wrapper__drawer">
+          <div class="nav__wrapper__drawer--1"></div>
+          <div class="nav__wrapper__drawer--2"></div>
+          <div class="nav__wrapper__drawer--3"></div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends-->
+
+    <!-- header starts -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xtra-lg-6 col-lg-6 col-md-12">
+            <section class="header__data">
+              <div class="header__data__contents">
+                <h3 class="header__data__contents__top">hi! my name is</h3>
+                <h2 class="header__data__contents__heading">
+                  <!-- Peter Xuanang -->
+                </h2>
+                <h4 class="header__data__contents__bottom">
+                  frontend developer
+                </h4>
+                <div class="header__data__contents__links">
+                  <a
+                    href="#"
+                    download="peter_oyebode_resume"
+                    class="btn btn--default"
+                    >my resume</a
+                  >
+                  <button class="btn btn--dark modal--btn">hire me</button>
+                </div>
+                
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      </div>
+    </header>
+    <!-- header ends -->
+
+    <!-- modal starts -->
+    <section class="modal">
+      <div class="modal__wrapper">
+        <i class="fa-solid fa-rectangle-xmark modal__wrapper__close"></i>
+        <div class="modal__wrapper__image">
+          <img src="./assets/images/me.svg" alt="" class="modal__wrapper__image__img">
+        </div>
+        <article class="modal__wrapper__contents">
+          <h2 class="heading">why hire me?</h2>
+          <p class="modal__wrapper__contents__text">
+            Hard-working listing programmer with a flair for creating elegant solutions in the least amount of time. As a freelance programmer, I have created many professional websites for clients around the globe.
+            We love what we do and we do what our clients love & work with great clients all over the world to create thoughtful and purposeful websites.
+          </p>
+          <div class="modal__wrapper__contents__block">
+            <span class="modal__wrapper__contents__block__left">email</span>
+            <span class="modal__wrapper__contents__block__right mail--block"></span>
+          </div>
+
+          <div class="modal__wrapper__contents__block">
+            <span class="modal__wrapper__contents__block__left">phone</span>
+
+            <span class="modal__wrapper__contents__block__right phone--block"></span>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- modal ends -->
+
+    <!-- about section starts -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-xtra-lg-12 about__block">
+            <div class="about__info">
+              <h1 class="heading">who am i?</h1>
+              <div class="about__info__message">
+              <p class="">
+                My name is Peter, a Physicist, awarded a degree in Physics at Olabisi Onabanjo University, Ogun State, Nigeria. I also hold a M.Sc degree in Telecommunications Engineering from the prestigious Hong Kong University of Science and Technology, Hong Kong SAR. Asides working in the telecom sector, I am very passionate about web technology, and the tools that power it. I am enthusiastic about JavaScript since I got introduced to it some years back and always keen on learning more and more about it and how it powers the modern day web.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends -->
+
+    <!-- projects section starts -->
+    <section class="projects" id="projects">
+      <div class="container decrease_margin">
+        <h2 class="heading">projects</h2>
+        <div class="row">
+          <div class="col-xtra-lg-3 col-lg-3 col-md-4 col-sm-6 col-xsm-12">
+            <div class="projects__card">
+              <div class="projects__card__image">
+                <img src="./assets/images/busta_stories.png" alt="busta_stories">
+              </div>
+
+              <div class="projects__card__layer">
+                <div class="projects__card__layer__contents">
+                  <h3 class="projects__card__layer__contents__title">
+                    novel application
+                  </h3>
+                  <span class="projects__card__layer__contents__tools">
+                    react, sass, js
+                  </span>
+                </div>
+
+                <div class="projects__card__layer__link">
+                  <a href="https://github.com/Densitty/cryptodashy" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xtra-lg-3 col-lg-3 col-md-4 col-sm-6 col-xsm-12">
+            <div class="projects__card">
+              <div class="projects__card__image">
+                <img src="./assets/images/crypto_dashy.png" alt="busta_stories">
+              </div>
+
+              <div class="projects__card__layer">
+                <div class="projects__card__layer__contents">
+                  <h3 class="projects__card__layer__contents__title">
+                    cryptodashy
+                  </h3>
+                  <span class="projects__card__layer__contents__tools">
+                    react, styled-components, js
+                  </span>
+                </div>
+                
+                <div class="projects__card__layer__link">
+                  <a href="https://github.com/Densitty/busta_stories" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xtra-lg-3 col-lg-3 col-md-4 col-sm-6 col-xsm-12">
+            <div class="projects__card">
+              <div class="projects__card__image">
+                <img src="./assets/images/furniture_store.png" alt="busta_stories">
+              </div>
+
+              <div class="projects__card__layer">
+                <div class="projects__card__layer__contents">
+                  <h3 class="projects__card__layer__contents__title">
+                    ecommerce store
+                  </h3>
+                  <span class="projects__card__layer__contents__tools">
+                    react, context-api, js, css-grid
+                  </span>
+                </div>
+                
+                <div class="projects__card__layer__link">
+                  <a href="https://github.com/Densitty/furniture_store" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xtra-lg-3 col-lg-3 col-md-4 col-sm-6 col-xsm-12">
+            <div class="projects__card">
+              <div class="projects__card__image">
+                <img src="./assets/images/tutor_finder.png" alt="project image">
+              </div>
+
+              <div class="projects__card__layer">
+                <div class="projects__card__layer__contents">
+                  <h3 class="projects__card__layer__contents__title">
+                    Tutor Finder
+                  </h3>
+                  <span class="projects__card__layer__contents__tools">
+                    vuejs, css 
+                  </span>
+                </div>
+                
+                <div class="projects__card__layer__link">
+                  <a href="https://github.com/Densitty/home_tutor" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xtra-lg-3 col-lg-3 col-md-4 col-sm-6 col-xsm-12">
+            <div class="projects__card">
+              <div class="projects__card__image">
+                <img src="./assets/images/funmax.png" alt="busta_stories">
+              </div>
+
+              <div class="projects__card__layer">
+                <div class="projects__card__layer__contents">
+                  <h3 class="projects__card__layer__contents__title">
+                    funmax
+                  </h3>
+                  <span class="projects__card__layer__contents__tools">
+                    react, redux, js, css-grids, flexbox
+                  </span>
+                </div>
+                
+                <div class="projects__card__layer__link">
+                  <a href="https://github.com/Densitty/funmax" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xtra-lg-3 col-lg-3 col-md-4 col-sm-6 col-xsm-12">
+            <div class="projects__card">
+              <div class="projects__card__image">
+                <img src="./assets/images/simple_node_app.png" alt="busta_stories">
+              </div>
+
+              <div class="projects__card__layer">
+                <div class="projects__card__layer__contents">
+                  <h3 class="projects__card__layer__contents__title">
+                    Simple Movie Site
+                  </h3>
+                  <span class="projects__card__layer__contents__tools">
+                    node, express, ejs, bootstrap
+                  </span>
+                </div>
+                
+                <div class="projects__card__layer__link">
+                  <a href="https://github.com/Densitty/muveBase" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xtra-lg-3 col-lg-3 col-md-4 col-sm-6 col-xsm-12">
+            <div class="projects__card">
+              <div class="projects__card__image">
+                <img src="./assets/images/vocallogue.png" alt="project image">
+              </div>
+
+              <div class="projects__card__layer">
+                <div class="projects__card__layer__contents">
+                  <h3 class="projects__card__layer__contents__title">
+                    vocalog
+                  </h3>
+                  <span class="projects__card__layer__contents__tools">
+                    php, js, bootstrap 
+                  </span>
+                </div>
+                
+                <div class="projects__card__layer__link">
+                  <a href="https://github.com/Densitty/vocallogue" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- projects section ends -->
+
+    <!-- skills section-->
+    <section class="skills" id="skills">
+      <div class="container decrease_margin">
+        <div class="row skills__row">
+          <div class="col-xtra-lg-6 col-lg-6 col-sm-12">
+            <div class="skills__contents">
+              <h2 class="skills__contents__heading">
+                I have skills in developing with JavaScript and its frameworks
+              </h2>
+              <!-- <p class="skills__contents__message">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, nemo. Quod, obcaecati class obcaecati.
+              </p> -->
+            </div>
+          </div>
+
+          <div class="col-xtra-lg-6 col-lg-6 col-sm-12">
+            <h2 class="heading">my skills</h2>
+            <div class="skills__block">
+              <span class="skills__block__tech">Frontend</span>
+              <span class="skills__block__list">html, css, js</span>
+            </div>
+            <div class="skills__block">
+              <span class="skills__block__tech">Backend</span>
+              <span class="skills__block__list">node, python, php</span>
+            </div>
+            
+            <div class="skills__block">
+              <span class="skills__block__tech">frameworks</span>
+              <span class="skills__block__list">react.js, vue.js, express</span>
+            </div>
+
+            <div class="skills__block">
+              <span class="skills__block__tech">databases</span>
+              <span class="skills__block__list">mysql, mongodb</span>
+            </div>
+
+            <div class="skills__block">
+              <span class="skills__block__tech">others</span>
+              <span class="skills__block__list">git, typescript, docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends-->
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+      <div class="container decrease_margin">
+        <h2 class="heading">contact me</h2>
+        <div class="row items--center">
+          <div class="col-xtra-lg-5 col-lg-5 col-sm-12">
+            <div class="contact__icon">
+              <svg
+                  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:cc="http://web.resource.org/cc/"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:dc="http://purl.org/dc/elements/1.1/"
+                  xmlns:svg="http://www.w3.org/2000/svg"
+                  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                  xmlns:ns1="http://sozi.baierouge.fr"
+                  id="Layer_1"
+                  xml:space="preserve"
+                  viewBox="0 0 640 480"
+                  y="0px"
+                  version="1.1"
+                  enable-background="new 0 0 640 480"
+                  x="0px"
+                >
+                  <rect
+                    y="19.047"
+                    width="640"
+                    height="441.91"
+                    fill="none"
+                />
+                        <linearGradient
+                    id="SVGID_1_"
+                    y2="88.071"
+                    gradientUnits="userSpaceOnUse"
+                    x2="-206.34"
+                    gradientTransform="matrix(7.619 0 0 7.619 1791.2 -501.72)"
+                    y1="89.38"
+                    x1="-219.51"
+                  >
+                        <stop
+                      stop-color="#CC7239"
+                      offset="0"
+                  />
+                        <stop
+                      stop-color="#F02A11"
+                      offset=".5"
+                  />
+                        <stop
+                      stop-color="#C61A11"
+                      offset="1"
+                  />
+                      </linearGradient
+                >
+                      <polygon
+                    points="225.63 173.82 104.82 136.42 129.71 183 228.31 212.61"
+                    fill="url(#SVGID_1_)"
+                />
+                        <linearGradient
+                    id="SVGID_2_"
+                    y2="94.948"
+                    gradientUnits="userSpaceOnUse"
+                    x2="-205.65"
+                    gradientTransform="matrix(7.619 0 0 7.619 1791.2 -501.72)"
+                    y1="96.257"
+                    x1="-218.83"
+                  >
+                        <stop
+                      stop-color="#CC7239"
+                      offset="0"
+                  />
+                        <stop
+                      stop-color="#F02A11"
+                      offset=".5"
+                  />
+                        <stop
+                      stop-color="#C61A11"
+                      offset="1"
+                  />
+                      </linearGradient
+                >
+                      <polygon
+                    points="150.12 221.18 230.93 250.67 229.34 227.61 139.07 200.52"
+                    fill="url(#SVGID_2_)"
+                />
+                        <linearGradient
+                    id="SVGID_3_"
+                    y2="78.707"
+                    gradientUnits="userSpaceOnUse"
+                    x2="-207.27"
+                    gradientTransform="matrix(7.619 0 0 7.619 1791.2 -501.72)"
+                    y1="80.017"
+                    x1="-220.44"
+                  >
+                        <stop
+                      stop-color="#CC7239"
+                      offset="0"
+                  />
+                        <stop
+                      stop-color="#F02A11"
+                      offset=".5"
+                  />
+                        <stop
+                      stop-color="#C61A11"
+                      offset="1"
+                  />
+                      </linearGradient
+                >
+                      <polygon
+                    points="220.38 97.725 59.283 51.224 95.385 118.76 224.58 158.6"
+                    fill="url(#SVGID_3_)"
+                />
+                      <polygon
+                    points="534.78 404.05 508.14 429.65 212.98 321.07 193.94 74.84 224.89 64.912 548.34 133.6"
+                    fill="#fff"
+                />
+                        <polygon
+                    points="223.86 309.87 207.23 80.914 336.59 246.54 248.86 314.8"
+                    fill="#E2AA52"
+                />
+                        <polygon
+                    points="502.67 407.16 505.31 157.73 364.71 252.1 480.43 393.04"
+                    fill="#E2AA52"
+                />
+                        <polygon
+                    points="223.86 309.87 502.18 407.08 374.02 244.55 326.08 235.11"
+                    fill="#E2AA52"
+                />
+                        <polygon
+                    points="502.18 407.08 516.67 393.19 528 148.69 505.31 157.73"
+                    fill="#D99734"
+                />
+                        <polygon
+                    points="528 148.69 225.36 77.017 207.31 80.845 506.34 157.79"
+                    fill="#FDD766"
+                />
+                          <linearGradient
+                    id="SVGID_4_"
+                    y2="104.48"
+                    gradientUnits="userSpaceOnUse"
+                    x2="-201.61"
+                    gradientTransform="matrix(7.619 0 0 7.619 1791.2 -501.72)"
+                    y1="97.625"
+                    x1="-191.86"
+                  >
+                          <stop
+                      stop-color="#F02A11"
+                      offset="0"
+                  />
+                          <stop
+                      stop-color="#C61A11"
+                      offset="1"
+                  />
+                        </linearGradient
+                >
+                        <polygon
+                    points="224.93 308.81 313.64 243.18 322.23 257.12"
+                    fill="url(#SVGID_4_)"
+                />
+                          <linearGradient
+                    id="SVGID_5_"
+                    y2="108.94"
+                    gradientUnits="userSpaceOnUse"
+                    x2="-176.63"
+                    gradientTransform="matrix(7.619 0 0 7.619 1791.2 -501.72)"
+                    y1="97.167"
+                    x1="-187"
+                  >
+                          <stop
+                      stop-color="#F02A11"
+                      offset="0"
+                  />
+                          <stop
+                      stop-color="#C61A11"
+                      offset="1"
+                  />
+                        </linearGradient
+                >
+                        <polygon
+                    points="500.5 406.47 392.39 252.57 379.54 264.34"
+                    fill="url(#SVGID_5_)"
+                />
+                        <polygon
+                    points="207.79 82.772 328.65 268.37 506.34 157.79 506.56 165.8 334.02 302.08"
+                    fill="#C61A11"
+                />
+                          <linearGradient
+                    id="SVGID_6_"
+                    y2="85.45"
+                    gradientUnits="userSpaceOnUse"
+                    x2="-183.88"
+                    gradientTransform="matrix(7.619 0 0 7.619 1791.2 -501.72)"
+                    y1="89.912"
+                    x1="-204.16"
+                  >
+                          <stop
+                      stop-color="#F0C47A"
+                      offset="0"
+                  />
+                          <stop
+                      stop-color="#E2AA52"
+                      offset="1"
+                  />
+                        </linearGradient
+                >
+                        <polygon
+                    points="207.31 80.845 328.65 271.59 506.34 157.79"
+                    fill="url(#SVGID_6_)"
+                />
+              <metadata
+                  ><rdf:RDF
+                    ><cc:Work
+                      ><dc:format
+                        >image/svg+xml</dc:format
+                      ><dc:type
+                          rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+                      /><cc:license
+                          rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+                      /><dc:publisher
+                        ><cc:Agent
+                            rdf:about="http://openclipart.org/"
+                          ><dc:title
+                            >Openclipart</dc:title
+                          ></cc:Agent
+                        ></dc:publisher
+                      ><dc:title
+                        >mail</dc:title
+                      ><dc:date
+                        >2013-07-08T13:15:05</dc:date
+                      ><dc:description
+                        >mail</dc:description
+                      ><dc:source
+                        >https://openclipart.org/detail/180093/mail-by-arnelsx-180093</dc:source
+                      ><dc:creator
+                        ><cc:Agent
+                          ><dc:title
+                            >arnelsx</dc:title
+                          ></cc:Agent
+                        ></dc:creator
+                      ><dc:subject
+                        ><rdf:Bag
+                          ><rdf:li
+                            >mail</rdf:li
+                          ></rdf:Bag
+                        ></dc:subject
+                      ></cc:Work
+                    ><cc:License
+                        rdf:about="http://creativecommons.org/licenses/publicdomain/"
+                      ><cc:permits
+                          rdf:resource="http://creativecommons.org/ns#Reproduction"
+                      /><cc:permits
+                          rdf:resource="http://creativecommons.org/ns#Distribution"
+                      />
+                      <cc:permits
+                          rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+                      />
+                    </cc:License>
+                      </rdf:RDF>
+                    </metadata>
+              </svg>
+            </div>
+          </div>
+          <div class="col-xtra-lg-7 col-lg-7 col-sm-12">
+            <form class="form" action="">
+              <div class="row">
+                <div class="col-xtra-lg-6 col-lg-6 col-md-12">
+                  <input type="text" placeholder="Name" class="form__control"
+                  name="name" />
+                </div>
+
+                <div class="col-xtra-lg-6 col-lg-6 col-md-12">
+                  <input type="email" placeholder="Email" class="form__control" name="email" />
+                </div>
+
+                <div class="col-xtra-lg-12 col-lg-12 col-md-12">
+                  <input type="text" placeholder="Subject" class="form__control" name="subject" />
+                </div>
+                
+                <div class="col-xtra-lg-12 col-lg-12 col-md-12">
+                  <textarea name="message" id="" cols="30" rows="10" class="form__control"
+                  placeholder="Please enter your message"></textarea>
+                </div>
+
+                <div class="col-xlg-12 col-lg-12 col-md-12">
+                    <input type="submit" value="Mail me"   class="btn btn--dark"
+                    name="submit" />
+                  </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- contact form modal starts -->
+    <section class="contact__modal">
+      <div class="contact__modal__wrapper show__wrapper">
+        <i class="fa-solid fa-rectangle-xmark contact__modal__wrapper__close"></i>
+        <article class="contact__modal__wrapper__contents">
+          <h2 class="contact__modal__wrapper__contents__heading">Hello, <span class="sender--name">
+            <!-- John Doe -->
+          </span></h2>
+          <p class="contact__modal__wrapper__contents__text">
+            <!-- Your message has been received. Expect a response from within 24 hours. -->
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- contact form modal ends -->
+
+    <!-- footer starts -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col-xtra-lg-12 col-lg-12 col-sm-12">
+          <div class="footer__content">
+            Copyright &copy; <span class="footer__content__year"></span>
+            <span class="footer__content__owner">peterXG</span>. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init("Ob-9jW4L-X1nfvjbz");
+        })();
+    </script>
+    <script src="./script/app.js"></script>
+  </body>
 </html>
