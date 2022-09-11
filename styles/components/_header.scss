@@ -33,8 +33,11 @@
       justify-content: center;
     }
 
-    @include responsive(xsm) {
-      justify-content: flex-start;
+    @include responsive(sm) {
+      justify-content: center;
+      // width: 100%;
+      text-align: center;
+      // padding: 2rem;
     }
   }
 
@@ -45,8 +48,11 @@
       text-transform: capitalize;
       color: $black;
 
-      @include responsive(xsm) {
+      @include responsive(sm) {
         font-size: 1.6rem;
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
       }
     }
 

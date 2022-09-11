@@ -27,7 +27,7 @@
 
     &__layer {
       @include position(absolute, 0, 0, 0, 0);
-      background: $green-500;
+      background: $green-900;
       width: 100%;
       height: 100%;
       @include flexDisplay(center, center);
@@ -39,10 +39,11 @@
       transition: all 0.5s ease-out;
 
       &__contents {
+        color: $white;
+
         &__title {
           font-size: 1.6rem;
           font-weight: 600;
-          color: $green-900;
           text-transform: capitalize;
           text-align: center;
         }
@@ -54,7 +55,6 @@
           font-weight: 600;
           text-transform: uppercase;
           text-align: center;
-          color: $green-900;
         }
       }
 
@@ -105,7 +105,7 @@
     }
   }
 
-  & .heading {
-    font-size: 2.5rem;
-  }
+  // & .heading {
+  //   font-size: 2.5rem;
+  // }
 }
